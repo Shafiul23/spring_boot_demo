@@ -1,4 +1,4 @@
-### Developer Log
+# Developer Log
 
 11/11/22
  * Created demo application and ran it successfully on port 8080.
