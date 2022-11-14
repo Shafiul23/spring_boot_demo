@@ -15,7 +15,16 @@
 13/11/22
 * Solved MongoDB Authentication error. I was receiving the error because I used a password and specified the database I wanted
   * The solution was to create a new user with access to read and write to the admin database
-  * Alternatively, by removing the password and not specifying I wanted to be in, the admin database was automatically used.
+  * Alternatively, by removing the password and not specifying which database I wanted to be in, the admin database was automatically used.
+* Application running with no error messages but students are not being added to the database (checked in Mongo Express).
+  * There seems to be no id value generating with the object. 
+    * Attempted to manually include id but printed object in console still claims id is null.
+    * Successfully changed id but student object still not being added to database.
+    * Received duplicate object error when using manual id.
+      * Added a unique string to the id field in student class every time the JVM is run. 
+
+14/11/22
+* Email field within student object now has to be unique to be added to database.
 * Wanted to use a method within the class Optional (found in java.util)
   * ifPresentOrElse() was introduced in java 13
   * Used ifPresent() instead, which is available in java 8.
