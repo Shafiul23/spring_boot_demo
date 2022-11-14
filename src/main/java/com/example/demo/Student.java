@@ -13,7 +13,8 @@ import java.util.UUID;
 @Document
 public class Student {
     @Id
-    private String id = UUID.randomUUID().toString();
+//    private String id = UUID.randomUUID().toString();
+    private String id;
     private String firstName;
     private String lastName;
     @Indexed(unique = true)

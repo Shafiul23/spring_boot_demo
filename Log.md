@@ -26,5 +26,8 @@
 14/11/22
 * Email field within student object now has to be unique to be added to database.
 * Wanted to use a method within the class Optional (found in java.util)
-  * ifPresentOrElse() was introduced in java 13
-  * Used ifPresent() instead, which is available in java 8.
+  * ifPresentOrElse() was introduced in Java 9
+    * Replaced this by using an if else statement with the ifPresent() method instead.
+* Created two new classes, StudentService and StudentController.
+  * These are the service layer and api layer respectively.
+  * Can now view all students on http://localhost:8080/api/v1/students
