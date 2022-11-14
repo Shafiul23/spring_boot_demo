@@ -31,3 +31,5 @@
 * Created two new classes, StudentService and StudentController.
   * These are the service layer and api layer respectively.
   * Can now view all students on http://localhost:8080/api/v1/students
+* Had an issue with not being able to view or delete students collection on mongo-express
+  * Solved this by using MongoDB Compass where I could remove the duplicate copies of the first student

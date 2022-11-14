@@ -27,15 +27,15 @@ public class  DemoApplication {
 			Address address = new Address(
 					"England",
 					"London",
-					"E3"
+					"W1"
 			);
 
-			String email = "john@email.com";
+			String email = "jane@email.com";
 			Student student = new Student(
-					"John",
-					"Smith",
+					"Jane",
+					"Doe",
 					email,
-					Gender.MALE,
+					Gender.FEMALE,
 					address,
 					BigDecimal.TEN,
 					LocalDateTime.now()
